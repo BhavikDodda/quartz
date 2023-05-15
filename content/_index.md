@@ -1,7 +1,4 @@
 ---
 title: Home
 ---
-
-[Note 1](folder1\Note%201.md)
-
-[Note 2](folder1\Note%202.md)
+[[Chemistry/1. Water Treatment/1. Water|1. Water]]
