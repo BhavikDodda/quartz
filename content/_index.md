@@ -1,4 +1,5 @@
 ---
 title: Home
 ---
-[[Chemistry/1. Water Treatment/1. Water|1. Water]]
+[[Chemistry/Water Treatment/Water|Water]]
+[[Chemistry/Water Treatment/Softening of Water|Softening of Water]]

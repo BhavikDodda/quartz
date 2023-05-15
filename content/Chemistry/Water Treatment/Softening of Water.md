@@ -1,4 +1,4 @@
-Removal of Calcium, magnesium, iron salts etc. to feed soft water into [[2. Boilers|boilers]]
+Removal of Calcium, magnesium, iron salts etc. to feed soft water into [[Chemistry/Water Treatment/Boilers|boilers]]
 
 Three processes
 # Cold and Hot Lime soda process
