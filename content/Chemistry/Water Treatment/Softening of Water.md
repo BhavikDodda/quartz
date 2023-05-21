@@ -1,3 +1,7 @@
+---
+title: Softening of Water
+---
+
 Removal of Calcium, magnesium, iron salts etc. to feed soft water into [[Chemistry/Water Treatment/Boilers|boilers]]
 
 Three processes
