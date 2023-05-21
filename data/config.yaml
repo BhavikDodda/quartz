@@ -1,6 +1,6 @@
 name: Bhavik Dodda
-enableToc: false
-openToc: false
+enableToc: true
+openToc: true
 enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true
