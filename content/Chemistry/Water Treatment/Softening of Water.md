@@ -1,5 +1,9 @@
 ---
 title: Softening of Water
+menu:
+    main:
+        params:
+        parent: Water Treatment
 ---
 
 Removal of Calcium, magnesium, iron salts etc. to feed soft water into [[Chemistry/Water Treatment/Boilers|boilers]]

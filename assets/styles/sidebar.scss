@@ -1,0 +1,45 @@
+.sidebar {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  
+  .menu {
+    padding-left: 2px;
+    list-style-type: disc;
+    font-size: .9em;
+  }
+  
+  .menu > ul {
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  li.hasChildren {
+    list-style: none;
+  }
+  
+  .childMenu {
+    padding-left: 24px;
+    font-size: .9em;
+  }
+  
+  .childMenu li a[aria-current="page"] {
+    color: var(--primary);
+  }
+  .childMenu li {
+    position: relative;
+    list-style-type: none;
+  }
+  
+  .childMenu li:hover::before {
+    background-color: var(--dark);
+  }
+  
+  .childMenu li::before{
+    content: '';
+    width: 2px;
+    height: 90%;
+    position: absolute;
+    left: -10px;
+    background-color: var(--outlinegray);
+  }

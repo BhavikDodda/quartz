@@ -1,0 +1,59 @@
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+  <nav class="menu">
+    <ul>
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </ul>
+  </nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+    {{- end }}
+
+    <!-- Opening Tag -->
+    {{- if .HasChildren }}
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details -->
+      <!-- Details creates collapsing section -->
+        <details role="menu">
+    {{- else }}
+      <!-- If no children, it's a list item -->
+        <li>
+    {{- end}}
+     <!-- Summary is used to display the text for <details> -->
+      <summary>
+        <a tabindex="0"
+          {{- range $k, $v := $attrs }}
+            {{- with $v }}
+              {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+            {{- end }}
+          {{- end -}}
+        >{{ or (T .Identifier) .Name | safeHTML }}</a>
+      </summary>
+      {{- with .Children }}
+        <ul class="childMenu">
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+      {{- end }}
+      {{- if .HasChildren }}
+    </label>
+    {{- end}}
+
+    <!-- Closing Tag -->
+    {{- if .HasChildren }}
+      </details>
+    {{- else }}
+      </li>
+    {{- end }}
+
+
+  {{- end }}
+{{- end }}

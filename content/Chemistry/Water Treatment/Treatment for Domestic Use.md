@@ -1,3 +1,10 @@
+---
+title: Treatment for Domestic Use
+menu:
+    main:
+        params:
+        parent: Water Treatment
+---
 Treatment for [[Chemistry/Water Treatment/Water#^1a9b58|domestic use]]
 ## Requirements for drinking water
 1. Clear and Odourless and devoid of unpleasant taste.

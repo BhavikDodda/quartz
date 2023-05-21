@@ -1,3 +1,10 @@
+---
+title: Chemical Analysis of Water
+menu:
+    main:
+        params:
+        parent: Water Treatment
+---
 # Estimation of free chlorine
 
 # Alkalinity

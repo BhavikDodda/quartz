@@ -1,6 +1,6 @@
 name: Bhavik Dodda
 enableToc: true
-openToc: true
+openToc: false
 enableLinkPreview: true
 enableLatex: true
 enableCodeBlockTitle: true
@@ -9,9 +9,10 @@ enableCallouts: true
 enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
-enableRecentNotes: false
+enableRecentNotes: true
 enableGitHubEdit: false
 enableMermaid: true
+sectionPagesMenu: main
 GitHubLink: https://github.com/BhavikDodda/quartz/tree/hugo/content
 search:
   enableSemanticSearch: false

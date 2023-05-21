@@ -1,3 +1,10 @@
+---
+title: Boilers
+menu:
+    main:
+        params:
+        parent: Water Treatment
+---
 Elaborating how it [[Chemistry/Water Treatment/Water#^743482|creates problems in boilers]]
 
 # Sludge and Scale formation
